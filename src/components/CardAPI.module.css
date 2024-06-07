@@ -1,0 +1,11 @@
+.card {
+    background-color: darkgray;
+    margin: 20px;
+}
+
+.status {
+    background-color: green;
+    width: 15px;
+    height: 15px;
+    border-radius: 100%;
+}

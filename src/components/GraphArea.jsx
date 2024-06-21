@@ -1,4 +1,4 @@
-import "./Graph.css";
+import "./Graph.module.css";
 import React from "react";
 import {
   LineChart,

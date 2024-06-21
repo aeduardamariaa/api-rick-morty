@@ -1,6 +1,7 @@
 .card-2 {
     background-color: darkgray;
     margin: 20px;
+    border-radius: 5px;
 }
 
 .status {

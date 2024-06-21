@@ -8,7 +8,7 @@ import { NavBar } from "./components/NavBar";
 
 
 export default function API() {
-    const [show, setShow] = useState("")
+    // const [show, setShow] = useState("")
     const [data, setData] = useState([])
     const [page, setPage] = useState("")
     const [name, setName] = useState("")

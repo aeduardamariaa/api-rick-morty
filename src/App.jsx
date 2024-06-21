@@ -7,6 +7,7 @@ import style from './App.module.css'
 import { SearchResult } from './components/Alert'
 import Graph from './Graph'
 
+
 // mapa
 import 'leaflet/dist/leaflet.css';
 
@@ -54,6 +55,8 @@ console.log(showError, "aprendendo controle de estado")
       <button onClick={() => setShow("map")}>Mapa</button>
       <a href={"/graph"}><button> Gráfico</button></a>
     </div>
+    {/* <NavBar/> */}
+
     <div  className={style.wrapPage}>
       <h1>Exercícios de manutenção</h1>
      {show === "prod" &&

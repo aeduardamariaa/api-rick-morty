@@ -2,6 +2,9 @@ import React from 'react'
 import ReactDOM from 'react-dom/client'
 import App from './App.jsx'
 import  Graph   from './Graph.jsx'
+import  Products   from './Products.jsx'
+import  API   from './API.jsx'
+import  Map   from './Map.jsx'
 import './index.css'
 
 
@@ -19,6 +22,18 @@ const router = createBrowserRouter([
   {
     path: "/graph",
     element: <Graph/>,
+  },
+  {
+    path: "/products",
+    element: <Products/>,
+  },
+  {
+    path: "/api",
+    element: <API/>,
+  },
+  {
+    path: "/map",
+    element: <Map/>,
   },
 ]);
 

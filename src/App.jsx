@@ -5,6 +5,7 @@ import produtos from './constants/produtos.json'
 import { api } from "./api/rmApi"
 import style from './App.module.css'
 import { SearchResult } from './components/Alert'
+import Graph from './Graph'
 
 // mapa
 import 'leaflet/dist/leaflet.css';
@@ -16,9 +17,6 @@ import "leaflet-defaulticon-compatibility";
 import { MapContainer, TileLayer, useMap, Marker, Popup } from 'react-leaflet'
 
 
-
-
-// graph
 
 function App() {
   const [show, setShow] = useState("")
@@ -54,7 +52,7 @@ console.log(showError, "aprendendo controle de estado")
       <button onClick={() => setShow("prod")}>Produtos</button>
       <button onClick={() => setShow("api")}>API</button>
       <button onClick={() => setShow("map")}>Mapa</button>
-      <button onClick={() => setShow("graph")}>Gráfico</button>
+      <a href={"/graph"}><button> Gráfico</button></a>
     </div>
     <div  className={style.wrapPage}>
       <h1>Exercícios de manutenção</h1>
@@ -113,9 +111,7 @@ console.log(showError, "aprendendo controle de estado")
       {show === "graph" && 
         <>
           <h2>Gráfico</h2>
-          <div>
-
-          </div>
+            <Graph/>
         </>
       }
     </div>

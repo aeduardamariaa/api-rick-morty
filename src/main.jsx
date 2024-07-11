@@ -6,6 +6,7 @@ import  Products   from './Products.jsx'
 import  API   from './API.jsx'
 import  Map   from './Map.jsx'
 import './index.css'
+import { SpeedInsights } from "@vercel/speed-insights/react"
 
 
 import {
@@ -39,6 +40,8 @@ const router = createBrowserRouter([
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>
+    <SpeedInsights/>
+    <Analytics />
     <RouterProvider router={router} />
   </React.StrictMode>
 );
